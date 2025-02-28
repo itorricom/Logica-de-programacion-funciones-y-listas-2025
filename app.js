@@ -6,8 +6,14 @@ function asignarTextoElemento(elemento, texto){
     elementoHTML.innerHTML = texto;
 }
 
-function intentoDeUsuario(){
-    alert('Clic desde el boton');
+function verificarIntento(){
+    let numeroDeUsuario = parseInt(document.getElementById("valorUsuario").value);
+    console.log(typeof(numeroDeUsuario));
+    console.log(numeroDeUsuario);  
+    console.log(typeof(numeroSecreto));
+    console.log(numeroSecreto);
+    console.log(numeroDeUsuario===numeroSecreto);
+    return;
 }
 
 function generarNumeroSecreto(){
